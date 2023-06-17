@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The filter() Method</h2>
+    <p>Click "Result" to get all element in the array that has a value above the entered
+        number:</p>
+        <p><input type="number" id="numberCheck" value="30></p>
+        <button onclick="myFunction() " >Test</button>
+        <p id="result"></p>
+        <script>
+            const ages = [59, 21, 46, 72];
+            function checkNumber(age) {
+                return age > document.geElementById("numberCheck").value;
+            }
+            function myFunction() {
+                document.getElementById("result") .innerHTML = ages.filter(checkNumber);
+            }
+        </script>
+</body>
+</html>
