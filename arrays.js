@@ -33,3 +33,17 @@ console.log("Final Cart["+cart.length+"] Details: "+cart);
 for(let dish of cart){
     console.log(dish);
 }
+
+//// Functions!!
+/* Function declaration */
+function calAge (birthYear) {
+    return 2021 - birthYear;
+  }
+  
+  /* Function expression */
+  let calAge = function (birthYear) {
+    return 2021 - birthYear;
+  }
+  
+  /* Arrow Function */
+  let calAge = (birthYear) => 2021 - birthYear;
